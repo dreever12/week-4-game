@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Week 4 Game</title>
+  <!-- Bootstrap File -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!--CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<!-- Bootstrap Grid -->
+	<div class="container">
+		<!-- Jumbotron with Title -->
+	    <div class="jumbotron">
+	      <h1 class="text-center gamename"><strong>Crystal Collector</strong></h1>
+	      <h4 class="text-center">Created by Dennyela</h4>
+	      <hr>	     
+	    </div>
+	    <div class="row">
+	      <!-- instructions -->
+	      <div class="col-lg-12">
+	        <!-- Controls (Instructions)-->
+	        <div class="panel panel-default panel-primary">
+	          <div class="panel-heading">
+	            <h3 class="panel-title text-center">Instructions</h3>
+	          </div>
+	          <div class="panel-body">
+	            <div class="text-center">
+	            	<p> You will be given a random nubmer at the start of the game. There ARE 4 CRYSTALS below. By clicking on a crystal you will add a specific amount of points to your tital score. You win the game by matching your total score to random number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it. Each time when the dame starts, the game will cahnge the values each of each crystal.</p>
+	            </div>
+	          </div>
+	        </div>
+		  </div>
+		</div>
+		<div class="row">
+	      <!-- Scores and Crystals -->
+	        <div class="col-lg-3">
+		        <!-- Controls (Target Score)-->
+		        <div class="panel panel-default panel-primary">
+		          <div class="panel-heading">
+		            <h3 class="panel-title">target scores!</h3>
+		          </div>
+		          <div class="panel-body">
+		            <div class="text-center">
+		              <p class="targetScore"></p>		         
+		            </div>
+		          </div>
+		        </div>
+			</div>
+				      <!-- Right Panel -->
+	        <div class="col-lg-3">
+		        <!-- Controls (Our SCore)-->
+		        <div class="panel panel-default panel-primary">
+		          <div class="panel-heading">
+		            <h3 class="panel-title">our score!</h3>
+		          </div>
+		          <div class="panel-body">
+		            <div class="text-center">
+		              <p class="ourScore"></p>
+		            </div>
+		          </div>
+		        </div>
+			</div>
+		      <!-- Left Panel -->
+      		<div class="col-lg-6">
+		        <!-- Controls (Crystals)-->
+		        <div class="panel panel-default panel-primary">
+		          <div class="panel-heading">
+		            <h3 class="panel-title">Crystal Collection!</h3>
+		          </div>
+		          <div class="panel-body">
+		            <div class="text-center ">
+		              <button id= "blue-crystal" class="crystal" value= "3"><img src="assets/images/blue.png"></button>
+		              <button id="green-crystal" class="crystal" value= "6"><img src="assets/images/green.png"></button>
+		              <button id="red-crystal" class="crystal" value= "9"><img src="assets/images/red.png"></button>
+		              <button id="yellow-crystal" class="crystal" value= "12"><img src="assets/images/yellow.png"></button>
+		            </div>
+		          </div>
+		        </div>
+			</div>			
+		</div>
+		<!-- Last Row with Win and Loos -->
+		<div class="row">
+	      <!-- Right Panel -->
+	        <div class="col-lg-6">
+		        <!-- Controls (Win)-->
+		        <div class="panel panel-default panel-primary">
+		          <div class="panel-heading">
+		            <h3 class="panel-title">Win Count</h3>
+		          </div>
+		          <div class="panel-body">
+		            <div class="text-center">
+		              <p class="win">0</p>
+		            </div>
+		          </div>
+		        </div>
+			</div>
+		      <!-- Left Panel -->
+      		<div class="col-lg-6">
+		        <!-- Controls (Superpower Grow/Shrink)-->
+		        <div class="panel panel-default panel-primary">
+		          <div class="panel-heading">
+		            <h3 class="panel-title">Loss Count</h3>
+		          </div>
+		          <div class="panel-body">
+		            <div class="text-center">
+		            	<p class="lose">0</p>
+		            </div>
+		          </div>
+		        </div>
+			</div>
+		</div>
+	</div>
+	<div class="panel panel-default">
+	  	<!-- <div class="panel-body">Panel Content</div> -->
+	 	<div class="panel-footer">Panel Footer</div>
+	</div>		
+
+</body>
+ <!--- JavaScript-->
+<script src="assets/javascript/game.js"></script>
+</html>
